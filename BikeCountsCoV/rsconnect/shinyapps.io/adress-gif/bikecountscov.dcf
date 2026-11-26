@@ -1,0 +1,11 @@
+name: bikecountscov
+title:
+username: adress-gif
+account: adress-gif
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 18533188
+appGuid:
+bundleId: 12872571
+url: https://adress-gif.shinyapps.io/bikecountscov/
+version: 1

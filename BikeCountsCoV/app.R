@@ -1,6 +1,7 @@
 library(shiny)
 library(dplyr)
 library(ggplot2)
+library(bslib)
 library(tidyr)
 
 #importing dataset:
@@ -39,11 +40,13 @@ ui <- fluidPage(
 
     ),
     mainPanel(
-      plotOutput("coolplot"),
-      br(),br(),
-      tableOutput("results")
+      navset_tab(
+        nav_panel(title = "Plot", plotOutput("coolplot")),
+        nav_panel(title = "Summary Table", tableOutput("results"))
+      )
     )
   )
+
 )
 
 # Define server logic required to draw a histogram
